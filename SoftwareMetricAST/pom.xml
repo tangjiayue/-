@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.0.6</version>
+  </parent>
+  
+  <groupId>org.csu</groupId>
+  <artifactId>SoftwareMetricAST</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SoftwareMetricAST</name>
+  
+  <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/org.eclipse.jdt.core -->
+        <dependency>
+            <groupId>org.eclipse.jdt</groupId>
+            <artifactId>org.eclipse.jdt.core</artifactId>
+            <version>3.40.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.osgi -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.osgi</artifactId>
+    		<version>3.22.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.equinox.preferences -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.equinox.preferences</artifactId>
+    		<version>3.11.200</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.equinox.common -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.equinox.common</artifactId>
+    		<version>3.19.200</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.core.runtime -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.core.runtime</artifactId>
+    		<version>3.32.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.core.resources -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.core.resources</artifactId>
+    		<version>3.22.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.core.jobs -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.core.jobs</artifactId>
+    		<version>3.15.400</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.platform/org.eclipse.core.contenttype -->
+		<dependency>
+    		<groupId>org.eclipse.platform</groupId>
+    		<artifactId>org.eclipse.core.contenttype</artifactId>
+    		<version>3.9.600</version>
+		</dependency>
+		
+		
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+                <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+		
+   </dependencies> 
+   
+   <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
